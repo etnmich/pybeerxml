@@ -1,4 +1,4 @@
-from defusedxml.etree import ElementTree
+from defusedxml import ElementTree
 from .recipe import *
 from .hop import Hop
 from .mash import Mash
@@ -39,21 +39,22 @@ class Parser(object):
     def parse(self, xml_file):
         "Get a list of parsed recipes from BeerXML input file"
         return self._do_parse(xml_file, True)
-        
-    def parse_string(self, xml_string)
+
+    def parse_string(self, xml_string):
         "Get a list of parsed recipes from BeerXML input string"
         return self._do_parse(xml_string, False)
-        
-    def  _do_parse(self, text, is_file)
+
+    def  _do_parse(self, text, is_file):
         "Actually do the parsing here"
-        
+
         recipes = []
-        
+
         if is_file:
             with open(text, "rt") as f:
                 tree = ElementTree.parse(f)
         else:
-            tree = ElementTree.ElementTree(ElementTree.fromstring(text))
+            # I almost thought Elements and ElementTrees behaved differently, but I guess not
+            tree = ElementTree.fromstring(text)
 
         for recipeNode in tree.iter():
             if self.to_lower(recipeNode.tag) != "recipe":

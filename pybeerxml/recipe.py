@@ -22,6 +22,11 @@ class Recipe(object):
         self.fermentables = []
         self.mash = None
 
+    def to_json(self, **kwargs):
+        import json
+        from .json import BeerXMLtoJSONEncoder
+        return json.dumps(self, cls=BeerXMLtoJSONEncoder, **kwargs)
+
     @property
     def abv(self):
         return ((1.05 * (self.og - self.fg)) / self.fg) / 0.79 * 100.0
