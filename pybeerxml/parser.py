@@ -1,4 +1,4 @@
-from xml.etree import ElementTree
+from defusedxml.etree import ElementTree
 from .recipe import *
 from .hop import Hop
 from .mash import Mash
@@ -37,12 +37,23 @@ class Parser(object):
             sys.stderr.write("Attribute <%s> not supported." % attribute)
 
     def parse(self, xml_file):
-        "Get a list of parsed recipes from BeerXML input"
-
+        "Get a list of parsed recipes from BeerXML input file"
+        return self._do_parse(xml_file, True)
+        
+    def parse_string(self, xml_string)
+        "Get a list of parsed recipes from BeerXML input string"
+        return self._do_parse(xml_string, False)
+        
+    def  _do_parse(self, text, is_file)
+        "Actually do the parsing here"
+        
         recipes = []
-
-        with open(xml_file, "rt") as f:
-            tree = ElementTree.parse(f)
+        
+        if is_file:
+            with open(text, "rt") as f:
+                tree = ElementTree.parse(f)
+        else:
+            tree = ElementTree.ElementTree(ElementTree.fromstring(text))
 
         for recipeNode in tree.iter():
             if self.to_lower(recipeNode.tag) != "recipe":
