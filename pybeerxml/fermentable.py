@@ -13,6 +13,9 @@ class Fermentable(object):
         self.color = None
         self._add_after_boil = None  # Should be Bool
 
+    def __repr__(self):
+        return 'pybeerxml.Hop<{}>'.format(self.name)
+
     @property
     def add_after_boil(self):
         return bool(self._add_after_boil)

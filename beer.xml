@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<?xml-stylesheet href='http://www.brewmate.net/brewmate.xsl' type='text/xsl'?>
+<!--BeerXML Format Recipe - Generated with BrewMate - www.brewmate.net-->
+<RECIPES>
+  <RECIPE>
+    <NAME>barley wine</NAME>
+    <VERSION>1</VERSION>
+    <TYPE>All Grain</TYPE>
+    <STYLE>
+      <NAME>American Amber Ale</NAME>
+    </STYLE>
+    <BREWER>BrewMate</BREWER>
+    <BATCH_SIZE>10</BATCH_SIZE>
+    <BOIL_SIZE>11</BOIL_SIZE>
+    <BOIL_TIME>60</BOIL_TIME>
+    <EFFICIENCY>70</EFFICIENCY>
+    <HOPS />
+    <FERMENTABLES>
+      <FERMENTABLE>
+        <NAME>Viking Sahtimallas</NAME>
+        <VERSION>1</VERSION>
+        <AMOUNT>3.000</AMOUNT>
+        <TYPE>Grain</TYPE>
+        <YIELD>82.608695652173992</YIELD>
+        <COLOR>2.5</COLOR>
+        <POTENTIAL>1.038</POTENTIAL>
+        <PERCENTAGE>61.86</PERCENTAGE>
+      </FERMENTABLE>
+      <FERMENTABLE>
+        <NAME>Brown Sugar, Dark</NAME>
+        <VERSION>1</VERSION>
+        <AMOUNT>0.500</AMOUNT>
+        <TYPE>Sugar</TYPE>
+        <YIELD>100.00000000000009</YIELD>
+        <COLOR>50</COLOR>
+        <POTENTIAL>1.046</POTENTIAL>
+        <PERCENTAGE>10.31</PERCENTAGE>
+      </FERMENTABLE>
+      <FERMENTABLE>
+        <NAME>Caraamber</NAME>
+        <VERSION>1</VERSION>
+        <AMOUNT>0.500</AMOUNT>
+        <TYPE>Grain</TYPE>
+        <YIELD>80.434782608695485</YIELD>
+        <COLOR>36</COLOR>
+        <POTENTIAL>1.037</POTENTIAL>
+        <PERCENTAGE>10.31</PERCENTAGE>
+      </FERMENTABLE>
+      <FERMENTABLE>
+        <NAME>Rye Malt</NAME>
+        <VERSION>1</VERSION>
+        <AMOUNT>0.500</AMOUNT>
+        <TYPE>Grain</TYPE>
+        <YIELD>65.217391304347885</YIELD>
+        <COLOR>3.5</COLOR>
+        <POTENTIAL>1.030</POTENTIAL>
+        <PERCENTAGE>10.31</PERCENTAGE>
+      </FERMENTABLE>
+      <FERMENTABLE>
+        <NAME>Viking Crystal Malt 100</NAME>
+        <VERSION>1</VERSION>
+        <AMOUNT>0.200</AMOUNT>
+        <TYPE>Grain</TYPE>
+        <YIELD>76.086956521738955</YIELD>
+        <COLOR>50.8</COLOR>
+        <POTENTIAL>1.035</POTENTIAL>
+        <PERCENTAGE>4.12</PERCENTAGE>
+      </FERMENTABLE>
+      <FERMENTABLE>
+        <NAME>Roasted Barley</NAME>
+        <VERSION>1</VERSION>
+        <AMOUNT>0.150</AMOUNT>
+        <TYPE>Grain</TYPE>
+        <YIELD>60.869565217391362</YIELD>
+        <COLOR>450</COLOR>
+        <POTENTIAL>1.028</POTENTIAL>
+        <PERCENTAGE>3.09</PERCENTAGE>
+      </FERMENTABLE>
+    </FERMENTABLES>
+    <MISCS />
+    <YEASTS>
+      <YEAST>
+        <NAME></NAME>
+        <VERSION>1</VERSION>
+        <ATTENUATION>75</ATTENUATION>
+      </YEAST>
+    </YEASTS>
+    <WATERS></WATERS>
+    <MASH>
+      <NAME></NAME>
+      <VERSION>1</VERSION>
+      <MASH_STEPS>
+        <MASH_STEP>
+          <NAME>Saccharification Rest</NAME>
+          <VERSION>1</VERSION>
+          <TYPE>Infusion</TYPE>
+          <STEP_TEMP>66</STEP_TEMP>
+          <STEP_TIME>60</STEP_TIME>
+        </MASH_STEP>
+      </MASH_STEPS>
+    </MASH>
+    <NOTES></NOTES>
+    <OG>1.112</OG>
+    <PRIMARY_TEMP>20</PRIMARY_TEMP>
+    <!--BrewMate XLST-->
+    <FG>1.023</FG>
+    <CALCCOLOUR>37.1348</CALCCOLOUR>
+    <CALCIBU>0.0</CALCIBU>
+    <!--BrewMate Specific Settings-->
+    <BIAB>0</BIAB>
+    <IBUCalcMethod>2</IBUCalcMethod>
+    <GrainCalcMethod>2</GrainCalcMethod>
+    <StyleNaziMode>1</StyleNaziMode>
+    <IsNoChill>0</IsNoChill>
+    <GrainUnits>1</GrainUnits>
+    <HopsUnits>0</HopsUnits>
+    <VolumeUnits>1</VolumeUnits>
+    <TemperatureUnits>0</TemperatureUnits>
+    <Colour>1</Colour>
+    <GrainTemp>0</GrainTemp>
+    <StrikeWater>13.05</StrikeWater>
+    <GrainAbsorbtion>0.9</GrainAbsorbtion>
+    <WatertoGrainRatio>3.00</WatertoGrainRatio>
+    <SpargeDeadSpace>0.00</SpargeDeadSpace>
+    <SpargeTempDesired>0</SpargeTempDesired>
+    <TopUpWater>0.0</TopUpWater>
+    <PercentEvap>10.0</PercentEvap>
+    <TrubChillerLosses>0.0</TrubChillerLosses>
+    <calendarpressed>0</calendarpressed>
+    <brewdayDate />
+    <yeastpitchDate />
+    <primaryDate />
+    <secondaryDate />
+    <keggingDate />
+    <serveDate />
+    <brewdayEnabled>1</brewdayEnabled>
+    <yeastpitchEnabled>1</yeastpitchEnabled>
+    <primaryEnabled>1</primaryEnabled>
+    <secondaryEnabled>0</secondaryEnabled>
+    <keggingEnabled>1</keggingEnabled>
+    <serveEnabled>1</serveEnabled>
+  </RECIPE>
+</RECIPES>

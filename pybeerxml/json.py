@@ -9,7 +9,7 @@ from .yeast import Yeast
 import json
 
 class BeerXMLtoJSONEncoder(json.JSONEncoder):
-    def default(self, obj):
+    def default(self, obj): # pylint: disable=E0202
         if isinstance(obj, (Recipe, Style, Fermentable, Hop, Mash, MashStep, Yeast)):
             return obj.__dict__
         return json.JSONEncoder.default(self, obj)

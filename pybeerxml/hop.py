@@ -11,6 +11,9 @@ class Hop(object):
         self.notes = None
         self.time = None
 
+    def __repr__(self):
+        return 'pybeerxml.Hop<{}>'.format(self.name)
+
     def utilization_factor(self):
         "Account for better utilization from pellets vs. whole"
         return 1.15 if self.form == "pellet" else 1.0

@@ -15,3 +15,6 @@ class Style(object):
         self.carb_min = None
         self.carb_max = None
         self.notes = None
+
+    def __repr__(self):
+        return 'pybeerxml.Style<{}>'.format(self.name)

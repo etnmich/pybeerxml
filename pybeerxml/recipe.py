@@ -22,6 +22,9 @@ class Recipe(object):
         self.fermentables = []
         self.mash = None
 
+    def __repr__(self):
+        return 'pybeerxml.Recipe<{}>'.format(self.name)
+
     def to_json(self, **kwargs):
         import json
         from .json import BeerXMLtoJSONEncoder
@@ -34,12 +37,12 @@ class Recipe(object):
     # Gravity degrees plato approximations
     @property
     def og_plato(self):
-        og = self.og or self.calc_og()
+        og = self.og #or self.calc_og()
         return (-463.37) + (668.72 * og) - (205.35 * (og * og))
 
     @property
     def fg_plato(self):
-        fg = self.fg or self.calc_fg()
+        fg = self.fg #or self.calc_fg()
         return (-463.37) + (668.72 * fg) - (205.35 * (fg * fg))
 
     @property

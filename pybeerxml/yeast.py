@@ -8,3 +8,6 @@ class Yeast(object):
         self.laboratory = None
         self.product_id = None
         self.flocculation = None
+
+    def __repr__(self):
+        return 'pybeerxml.Yeast<{}>'.format(self.name)
