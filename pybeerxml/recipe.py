@@ -18,6 +18,7 @@ class Recipe(object):
 
         self.style = None
         self.hops = []
+        self.miscs = []
         self.yeasts = []
         self.fermentables = []
         self.mash = None

@@ -1,6 +1,7 @@
 from defusedxml import ElementTree
 from .recipe import *
 from .hop import Hop
+from .misc import Misc
 from .mash import Mash
 from .mash_step import MashStep
 from .yeast import Yeast
@@ -78,11 +79,17 @@ class Parser(object):
                         self.nodes_to_object(yeast_node, yeast)
                         recipe.yeasts.append(yeast)
 
-                elif tag_name == "hops" or tag_name == "miscs":
+                elif tag_name == "hops":
                     for hop_node in list(recipeProperty):
                         hop = Hop()
                         self.nodes_to_object(hop_node, hop)
                         recipe.hops.append(hop)
+
+                elif tag_name == "miscs":
+                    for misc_node in list(recipeProperty):
+                        misc = Misc()
+                        self.nodes_to_object(misc_node, misc)
+                        recipe.miscs.append(misc)
 
                 elif tag_name == "style":
                     style = Style()
